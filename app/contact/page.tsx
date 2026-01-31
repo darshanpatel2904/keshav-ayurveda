@@ -65,11 +65,7 @@ export default function Contact() {
     setIsSubmitting(true);
 
     // Simulate form submission
-    await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
     toast("Message Sent!, We'll get back to you within 24 hours.");
 

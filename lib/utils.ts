@@ -24,7 +24,6 @@ export async function sendWhatsappMessage(
     message = "Hi! I'd like to know more about your Ayurvedic products.";
   }
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-  await fetch("/api/buy-click", { method: "POST" });
-  window.open(url, "_blank");
+  window.open(url);
   return url;
 }
