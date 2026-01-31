@@ -1,15 +1,14 @@
 "use client";
 import { MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { phoneNumber } from "@/lib/utils";
 
 interface WhatsAppButtonProps {
-  phoneNumber?: string;
   message?: string;
 }
 
 export function WhatsAppButton({
-  phoneNumber = "919876543210",
-  message = "Hello! I'm interested in your Ayurveda products.",
+  message = "Hello! I'm interested in your Ayurveda products. Could you please provide more information?",
 }: WhatsAppButtonProps) {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
