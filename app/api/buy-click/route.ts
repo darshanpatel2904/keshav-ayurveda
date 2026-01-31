@@ -1,9 +1,7 @@
-import { readData, writeData } from "@/lib/store";
+import { kv } from "@vercel/kv";
 import { NextResponse } from "next/server";
 
 export async function POST() {
-  const data = readData();
-  data.buyClicks += 1;
-  writeData(data);
+  await kv.incr("buyClicks");
   return NextResponse.json({ ok: true });
 }
