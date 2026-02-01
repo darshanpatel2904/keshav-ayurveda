@@ -31,7 +31,7 @@ export const products: Product[] = [
     name: "Nari Sanjeevani Syrup",
     description:
       "A complete natural and safe Ayurvedic tonic specifically formulated for women's health and vitality.",
-    price: 499,
+    price: 549,
     originalPrice: 549,
     rating: 4.9,
     reviews: 128,
@@ -44,7 +44,7 @@ export const products: Product[] = [
     name: "Super Berry Juice",
     description:
       "A powerful blend of 12 super berries designed to provide a natural glow and an instant energy boost.",
-    price: 1310,
+    price: 1410,
     originalPrice: 1410,
     rating: 4.8,
     reviews: 215,
@@ -57,8 +57,8 @@ export const products: Product[] = [
     name: "Bodygrow Tablet",
     description:
       "Natural weight gain formula that helps boost appetite and improve physical stamina effectively.",
-    price: 549,
-    originalPrice: 650,
+    price: 1700,
+    originalPrice: 2250,
     rating: 4.7,
     reviews: 164,
     image: product3,
@@ -70,8 +70,8 @@ export const products: Product[] = [
     name: "Slimtone Tablet",
     description:
       "Ayurvedic obesity care tablets that help burn fat while enhancing mental focus and energy levels.",
-    price: 599,
-    originalPrice: 750,
+    price: 1700,
+    originalPrice: 2250,
     rating: 4.6,
     reviews: 142,
     image: product4,
@@ -83,7 +83,7 @@ export const products: Product[] = [
     name: "Premium Noni Plus Juice",
     description:
       "An advanced Ayurvedic preparation of Noni fruit to support overall cellular health and detoxification.",
-    price: 1250,
+    price: 1350,
     originalPrice: 1350,
     rating: 4.8,
     reviews: 189,
