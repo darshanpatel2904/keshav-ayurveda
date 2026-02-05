@@ -29,7 +29,7 @@ import Link from "next/link";
 export default function Products() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [sortBy, setSortBy] = useState("featured");
-  const [priceRange, setPriceRange] = useState<[number, number]>([0, 1000]);
+  const [priceRange, setPriceRange] = useState<[number, number]>([0, 3000]);
   const [searchQuery, setSearchQuery] = useState("");
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
@@ -140,7 +140,7 @@ export default function Products() {
 
         {/* Products Section */}
         <section className="py-12">
-          <div className="container">
+          <div className="md:container">
             <div className="flex relative gap-8">
               {/* Desktop Filters Sidebar */}
               <div className="hidden w-64 shrink-0 lg:block">
@@ -172,10 +172,10 @@ export default function Products() {
                 ) : null}
               </div>
               {/* Products Grid */}
-              <div className="flex-1">
+              <div className="flex-1 w-full">
                 {/* Toolbar */}
                 <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
-                  <div className="flex items-center gap-4">
+                  <div className="flex flex-wrap items-center gap-4">
                     {/* Mobile Filter Button */}
                     <Button
                       variant="outline"

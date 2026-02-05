@@ -23,6 +23,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.05 }}
+      className="max-w-72 md:max-w-none"
     >
       <div className="group overflow-hidden rounded-2xl border border-border bg-card transition-all hover:shadow-xl">
         {/* Image */}
